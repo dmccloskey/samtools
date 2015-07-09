@@ -1,0 +1,13 @@
+# install samtools
+cd /home/douglas/Programs
+wget https://github.com/samtools/samtools/releases/download/1.2/samtools-1.2.tar.bz2
+tar -xvjf samtools-1.2.tar.bz2
+make prefix=/home/douglas/Programs/samtools install
+
+# add samtools to PATH
+export PATH=$PATH:/home/douglas/Programs/samtools/bin
+
+# cleanup
+cd ..
+rm samtools-1.2.tar.bz2
+rm -rf samtools-1.2
